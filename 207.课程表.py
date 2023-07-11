@@ -15,6 +15,7 @@ class Solution:
         # 时间复杂度：O(n+m)，n为节点数，m为边数
         # 空间复杂度：O(n+m)，n为节点数，m为边数
         # 入度表
+        '''
         in_degree = [0] * numCourses
         # 邻接表
         adj = [[] for _ in range(numCourses)]
@@ -36,6 +37,7 @@ class Solution:
                 if in_degree[cur] == 0:
                     queue.append(cur)
         return numCourses == 0
+        '''
         #DFS,回溯法
         # 1. 使用邻接表存储图
         # 2. 遍历每个节点，如果节点没有被访问过，就从该节点开始深度优先遍历
