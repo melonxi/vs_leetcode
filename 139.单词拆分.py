@@ -14,14 +14,14 @@ class Solution:
         # 4. 返回值：dp[-1]
         # 时间复杂度：O(n^2)，n为字符串长度
         # 空间复杂度：O(n)，n为字符串长度
-        # dp = [False] * (len(s) + 1)
-        # dp[0] = True
-        # for i in range(1, len(s) + 1):
-        #     for j in range(i):
-        #         if dp[j] and s[j:i] in wordDict:
-        #             dp[i] = True
-        #             break
-        # return dp[-1]
+        dp = [False] * (len(s) + 1)
+        dp[0] = True
+        for i in range(1, len(s) + 1):
+            for j in range(i):
+                if dp[j] and s[j:i] in wordDict:
+                    dp[i] = True
+                    break
+        return dp[-1]
        
         
 # @lc code=end
