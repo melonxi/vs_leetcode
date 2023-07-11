@@ -44,7 +44,10 @@ class Solution:
         # 时间复杂度：O(n+m)，n为节点数，m为边数
         # 空间复杂度：O(n+m)，n为节点数，m为边数
         # 邻接表
+<<<<<<< HEAD
         '''
+=======
+>>>>>>> 289dd453d50a895d6390483460a987ddaa3f9bab
         adj = [[] for _ in range(numCourses)]
         # 初始化邻接表
         for cur, pre in prerequisites:
@@ -73,6 +76,7 @@ class Solution:
             if not dfs(i):
                 return False
         return True
+<<<<<<< HEAD
         '''
         # BFS
         # 1. 使用邻接表存储图
@@ -84,6 +88,9 @@ class Solution:
         # 空间复杂度：O(n+m)，n为节点数，m为边数
         
 
+=======
+        
+>>>>>>> 289dd453d50a895d6390483460a987ddaa3f9bab
     
 # @lc code=end
 
