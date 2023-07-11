@@ -11,12 +11,12 @@ class Solution:
         # 哈希表存储每个数字的下标
         
 
-        num_index_dict = {}
-        for i,num in enumerate(nums):
-            if target - num in num_index_dict:
-                return [i,num_index_dict[target - num]]
+        num_index_dict = {}# key: num, value: index
+        for i,num in enumerate(nums):# 遍历数组
+            if target - num in num_index_dict:# 如果target - num在哈希表中
+                return [i,num_index_dict[target - num]]# 返回下标
             else:
-                num_index_dict[num] = i
+                num_index_dict[num] = i# 否则将num存入哈希表
         
                         
 # @lc code=end
