@@ -2,7 +2,7 @@
 
 ## 介绍
 
-欢迎访问我的LeetCode题解仓库！
+欢迎访问我的LeetCode题解仓库，题解使用github copilot！
 
 ## 内容
 
